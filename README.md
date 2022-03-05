@@ -1,10 +1,10 @@
 # Vision Algorithms for Mobile Robotics
 
-Fully implementation of a basic Visual Odometry pipeline.
+Fully implementation of a monocular Visual Odometry pipeline.
 
 #
 
-Waiting for the final grade.
+Project rated with full marks (no bonus).
 
 #
 
@@ -14,11 +14,9 @@ Implement a monocular Visual Odometry pipeline with the following features: init
 frames, pose estimation using established 2D-3D correspondences, and triangulation of new landmarks.
 Additional implemented bonus feature: n-view Bundle Adjustment.  
 
-Since the VO is monocular and loop closure is not implemented, the estimated trajectory could be not global coherent (if scaling drift occurs), but it remains local choerent.  
+Since the VO is monocular and loop closure is not implemented the estimated trajectory could be not global coherent, but it remains local choerent.  
 
-#
-
-Further info: [Assignment_Visual_Odometry.pdf](Assignment_Visual_Odometry.pdf).  
+Further info: [Assignment.pdf](Assignment.pdf).  
 
 Video examples:  
 
@@ -46,19 +44,4 @@ The desired dataset can be chosen by setting the parameter 'ds' in line 8.
 
 Additionally, the bonus feature (n-view bundle adjustment) can be (de-)activated by setting the parameter 'params.BA' in line 103.  
 
-The script will run through the complete specified dataset and save the full trajectory and and landmark estimation to the folder '..\results\\[dataset]'.
-
-#
-#### Authors:
-
-Robert John
-robjohn@student.ethz.ch
-
-Nicola Loi
-nicloi@student.ethz.ch
-
-Vincent van der Brugge
-vincentv@student.ethz.ch
-
-Jonas Walther
-waltherj@student.ethz.ch
+The script will run through the complete specified dataset and save the full trajectory and and landmark estimation inside the generated folder *results/[dataset]*.
